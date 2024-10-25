@@ -1,6 +1,6 @@
-'use client'; // Para que se renderice en el cliente
+"use client";
 import React, { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 interface ItemProps {
   text: string;

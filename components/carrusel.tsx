@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import { Card, CardHeader, CardBody } from '@nextui-org/react';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';

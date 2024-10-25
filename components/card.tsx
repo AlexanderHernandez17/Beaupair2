@@ -1,7 +1,6 @@
-'use client';
-
+"use client";
 import React, { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 interface CardProps {
   title: string;

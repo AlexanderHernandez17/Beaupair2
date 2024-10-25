@@ -13,6 +13,7 @@ const MapComponent = () => {
           allowFullScreen
           aria-hidden="false"
           tabIndex={0}
+          title="Descripción única del contenido"
         />
       </div>
     </div>

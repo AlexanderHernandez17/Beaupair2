@@ -3,7 +3,6 @@ import Image from 'next/image';
 import logo from "@/public/logo.png"; // Asegúrate de que la ruta sea correcta
 import { IconSvgProps } from "@/types"; // Asegúrate de que este tipo sea correcto
 
-// Define un nuevo tipo que excluya las propiedades incompatibles
 interface LogoProps extends Omit<IconSvgProps, 'onCopy' | 'onPaste' | 'color' | 'id' | 'lang' | 'max'> {
   size?: number; // Tamaño opcional para la imagen
 }
