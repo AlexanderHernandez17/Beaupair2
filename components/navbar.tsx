@@ -72,7 +72,7 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                 }
-                href="#"
+                href="./team"
                 size="lg"
               >
                 {item.label}

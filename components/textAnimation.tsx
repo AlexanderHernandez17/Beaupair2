@@ -1,6 +1,11 @@
-import { motion } from "framer-motion";
+"use client";
+import { motion, useInView } from "framer-motion";
+import React, { useRef } from "react";
 
 const AnimatedText = () => {
+  const ref = useRef<HTMLHeadingElement>(null);
+  const isInView = useInView(ref, { once: true }); // Activar solo una vez
+
   // Configuración de la animación
   const textAnimation = {
     hidden: { opacity: 0, y: -20 },  // Comienza oculto y hacia arriba
@@ -13,9 +18,10 @@ const AnimatedText = () => {
 
   return (
     <motion.h1 
-      className="text-6xl font-bold text-[#BF5FFF]" // Lila fluorescente
+      ref={ref} // Referencia para el hook useInView
+      className="text-4xl text-center font-bold text-[#BF5FFF]" // Tamaño de texto ajustado y centrado
       initial="hidden" 
-      animate="visible"
+      animate={isInView ? "visible" : "hidden"} // Animación basada en la visibilidad
       variants={textAnimation}
     >
       Nuestros Servicios
@@ -24,3 +30,5 @@ const AnimatedText = () => {
 };
 
 export default AnimatedText;
+
+

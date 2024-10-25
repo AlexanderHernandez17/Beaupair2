@@ -10,15 +10,15 @@ interface TeamMemberCardProps {
 }
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ name, role, description, imageSrc }) => {
-  const ref = React.useRef(null); // Referencia para el elemento
-  const isInView = useInView(ref, { once: true }); // Detecta si está en vista
+  const ref = React.useRef(null); 
+  const isInView = useInView(ref, { once: true }); 
 
   return (
     <motion.div
-      ref={ref} // Asocia la referencia al div
-      initial={{ x: -100, opacity: 0 }} // Inicia desde la izquierda con opacidad 0
-      animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }} // Anima cuando está en vista
-      transition={{ duration: 0.5 }} // Duración de la animación
+      ref={ref} 
+      initial={{ x: -100, opacity: 0 }} 
+      animate={{ x: isInView ? 0 : -100, opacity: isInView ? 1 : 0 }} 
+      transition={{ duration: 0.5 }} 
     >
       <Card
         isBlurred
