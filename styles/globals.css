@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+:root {
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-chewy: 'Chewy';
+    --font-scripter: 'Scripter';
+    --font-blueberry: 'Blueberry';
+  }
+  
+  @font-face {
+    font-family: 'Blueberry';
+    src: url('/fonts/Blueberry.woff2') format('woff2'), /* Modern Browsers */
+         url('/fonts/Blueberry.woff') format('woff'); /* Fallback para navegadores antiguos */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .font-blueberry {
+    font-family: 'Blueberry', sans-serif; /* Asegúrate de tener un fallback */
+  }
+
+  .navbar-expanded {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  
+
+  
