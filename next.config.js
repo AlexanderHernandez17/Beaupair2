@@ -6,4 +6,8 @@ const nextConfig = {
     },
   }
   
+<<<<<<< HEAD
   module.exports = nextConfig
+=======
+  module.exports = nextConfig
+>>>>>>> 932cd210178a83664f6ba4305aecc9c2a4357baa
