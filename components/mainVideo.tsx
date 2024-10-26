@@ -1,4 +1,6 @@
 import React from 'react';
+import { title } from './primitives';
+import ButtonComponent from './button';
 
 interface FullScreenVideoProps {
   src: string;
@@ -30,6 +32,20 @@ const FullScreenVideo: React.FC<FullScreenVideoProps> = ({ src, alt }) => {
         }}
         aria-label={alt}
       />
+      <section className="absolute inset-0 flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+       <div className="inline-block max-w-xl text-center">
+         <span className={`${title()} font-blueberry`}>Descubre tu &nbsp;</span>
+         <span className={title({ color: "violet" })}>lugar&nbsp;</span>
+         <br />
+        <span className={title()}>
+         en el mundo y transforma tu vida.
+         </span>
+        </div>
+       {/* Coloca el botón en un nuevo div fuera del contenedor de texto para que aparezca debajo */}
+        <div className="inline-block max-w-xl text-center">
+       <ButtonComponent />
+      </div>
+      </section>
     </div>
   );
 };

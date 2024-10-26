@@ -90,17 +90,8 @@ export default function Home() {
 
   return (
     <div className=" flex flex-col min-h-screen ">
-      <FullScreenVideo src="/Diseño sin título.mp4" />
-      <section className="absolute inset-0 flex flex-col items-center justify-center gap-4 py-8 md:py-10 ">
-        <div className="inline-block max-w-xl text-center justify-center">
-          <span className={`${title()} font-blueberry`}>Descubre tu &nbsp;</span>
-          <span className={title({ color: "violet" })}>lugar&nbsp;</span>
-          <br />
-          <span className={title()}>
-            en el mundo y transforma tu vida.
-          </span>
-        </div>
-        </section>
+      <FullScreenVideo src="/mainVideo.mp4"/>
+
 
         <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <CardComponent 
@@ -193,23 +184,27 @@ export default function Home() {
       </div>
 
       <div className="mt-16">
-        <DynamicContent />
-        </div>
+      <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+       <DynamicContent />
+       </a>
+      </div>
 
-      <div className="flex flex-col items-center justify-center mt-16">
-          <div className="max-w-xl text-center">
-          <span className={title()}>Déjanos tus datos y un experto en viajes se pondrá en &nbsp;</span>
-          <span className={title({ color: "violet" })}>contacto&nbsp;</span>
-          <br />
-          <span className={title()}>
-          contigo.
+         <div className="flex flex-col items-center justify-center mt-16">
+         <div className="max-w-xl text-center">
+         <span className={title()}>Déjanos tus datos y un experto en viajes se pondrá en &nbsp;</span>
+         <span className={title({ color: "violet" })}>contacto&nbsp;</span>
+         <br />
+         <span className={title()}>
+         contigo.
          </span>
          </div>
+         <div className="mt-8">
+         <ModalComponent />
          </div>
-         
+         </div>
 
-        <div>
-        <ModalComponent />
+        <div className="items-center justify-center">
+        
         </div>
 
 

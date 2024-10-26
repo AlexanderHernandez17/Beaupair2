@@ -12,7 +12,7 @@ const AnimatedText = () => {
     visible: { 
       opacity: 1, 
       y: 0, 
-      transition: { duration: 0.5 }  // Duración de la animación
+      transition: { duration: 0.9 }  // Duración de la animación
     }
   };
 

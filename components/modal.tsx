@@ -9,11 +9,7 @@ export default function ModalComponent() {
 
   return (
     <>
-      <div> 
-        <Button onPress={onOpen} style={{ backgroundColor: 'violet', color: 'white' }} variant="shadow">
-          ¡Empecemos!
-        </Button>
-      </div>
+      <Button onPress={onOpen} style={{ backgroundColor: 'violet', color: 'white' }} variant="shadow"  >¡Empecemos!</Button>
       <Modal 
         isOpen={isOpen} 
         onOpenChange={setIsOpen}

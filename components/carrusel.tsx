@@ -17,12 +17,12 @@ const items = [
   {
     title: "Dominar un Nuevo Idioma",
     description: "Lograrás fluidez en un segundo idioma, abriendo puertas a oportunidades internacionales y conectándote con personas de todo el mundo.",
-    imageUrl: "/amigas hablando.jfif", 
+    imageUrl: "/mujer2.jpg", 
   },
   {
     title: "Crear Lazos Internacionales",
     description: "Formarás amistades profundas con personas de diferentes culturas, construyendo una red global que durará toda la vida.",
-    imageUrl: "/lazos internacionales.jfif",
+    imageUrl: "/mujer3.jpg",
   },
   {
     title: "Vivir una Inmersión Cultural",
