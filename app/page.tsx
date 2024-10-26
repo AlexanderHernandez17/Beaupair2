@@ -3,6 +3,7 @@ import Benefits from "@/components/beneficios";
 import ButtonComponent from "@/components/button";
 import CardComponent from "@/components/card";
 import CarruselComponent from "@/components/carrusel";
+import LogrosComponent from "@/components/logra";
 import FullScreenVideo from "@/components/mainVideo";
 import MapComponent from "@/components/map";
 import ModalComponent from "@/components/modal";
@@ -124,10 +125,8 @@ export default function Home() {
          </div>
 
          <div className="flex flex-col space-y-4 mt-16">
-        {benefitsList.map((benefit, index) => (
-          <Benefits key={index} text={benefit.text} icon={benefit.icon} />
-        ))}
-        </div>
+          <LogrosComponent/>
+         </div>
 
         <div className="flex flex-col items-center justify-center mt-16">
           <div className="max-w-xl text-center">
@@ -145,24 +144,36 @@ export default function Home() {
         <ButtonComponent />
         </div>
 
+        <div className=" mt-16">
+        <AnimatedText text="Con Au pair podrás lograr" className="text-2xl md:text-xl text-[#BF5FFF]" />
+        </div>
+
         <div className="mt-8">
         <CarruselComponent />
         </div>
 
-        <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <CardComponent 
-          title="REQUISITOS USA"
-          description={<ul className="list-disc text-left ml-4">{usaRequirements.map((req, i) => <li key={i}>{req}</li>)}</ul>}
-        />
-        <CardComponent 
-          title="REQUISITOS ALEMANIA"
-          description={<ul className="list-disc text-left ml-4">{germanyRequirements.map((req, i) => <li key={i}>{req}</li>)}</ul>}
-        />
-        <CardComponent 
-          title="BENEFICIOS DE SER AU PAIR ALEMANIA"
-          description={<ul className="list-disc text-left ml-4">{germanyBenefits.map((benefit, i) => <li key={i}>{benefit}</li>)}</ul>}
-        />
+        
+        
+        <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+    <CardComponent 
+      className="h-64" // Altura fija
+      title="REQUISITOS USA"
+      description={<ul className="list-disc text-left ml-4">{usaRequirements.map((req, i) => <li key={i}>{req}</li>)}</ul>}
+    />
+    <CardComponent 
+      className="h-64" // Altura fija
+      title="REQUISITOS ALEMANIA"
+      description={<ul className="list-disc text-left ml-4">{germanyRequirements.map((req, i) => <li key={i}>{req}</li>)}</ul>}
+    />
+    <CardComponent 
+      className="h-64" // Altura fija
+      title="BENEFICIOS DE SER AU PAIR ALEMANIA"
+      description={<ul className="list-disc text-left ml-4">{germanyBenefits.map((benefit, i) => <li key={i}>{benefit}</li>)}</ul>}
+    />
+      </div>
       </section>
+
 
       <div className="flex flex-col items-center justify-center mt-16">
           <div className="max-w-xl text-center">
@@ -180,8 +191,13 @@ export default function Home() {
       </div>
 
       <div className=" mt-16">
-        <AnimatedText />
+      <AnimatedText text="Nuestros Servicios" className="text-[#BF5FFF]" />
       </div>
+
+      <div className=" mt-16">
+
+      </div>
+      
 
       <div className="mt-16">
       <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
@@ -202,10 +218,6 @@ export default function Home() {
          <ModalComponent />
          </div>
          </div>
-
-        <div className="items-center justify-center">
-        
-        </div>
 
 
 

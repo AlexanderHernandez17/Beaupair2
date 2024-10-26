@@ -5,7 +5,8 @@ import { Card, CardBody } from '@nextui-org/react';
 
 interface CardProps {
   title: string;
-  description: React.ReactNode; // Cambiado a ReactNode para permitir JSX
+  description: React.ReactNode; 
+  className?: string;
 }
 
 const CardComponent: React.FC<CardProps> = ({ title, description }) => {
@@ -24,7 +25,7 @@ const CardComponent: React.FC<CardProps> = ({ title, description }) => {
         className="border-none bg-background/60 dark:bg-default-100/50 shadow-lg border-2" // Borde violeta
       >
         <CardBody>
-          <h1 className="text-center font-blueberry text-foreground/90" style={{ color: "violet" }}>
+          <h1 className="text-center text-foreground/90" style={{ color: "violet" }}>
           {title}</h1>
           <div className="text-large font-medium mt-2">{description}</div>
         </CardBody>

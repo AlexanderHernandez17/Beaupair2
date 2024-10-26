@@ -2,7 +2,12 @@
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
 
-const AnimatedText = () => {
+interface AnimatedTextProps {
+  text: string;
+  className?: string;
+}
+
+const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className }) => {
   const ref = useRef<HTMLHeadingElement>(null);
   const isInView = useInView(ref, { once: true }); // Activar solo una vez
 
@@ -19,16 +24,15 @@ const AnimatedText = () => {
   return (
     <motion.h1 
       ref={ref} // Referencia para el hook useInView
-      className="text-4xl text-center font-bold text-[#BF5FFF]" // Tamaño de texto ajustado y centrado
+      className={`text-4xl text-center font-bold ${className}`} // Clase personalizada
       initial="hidden" 
       animate={isInView ? "visible" : "hidden"} // Animación basada en la visibilidad
       variants={textAnimation}
     >
-      Nuestros Servicios
+      {text}
     </motion.h1>
   );
 };
 
 export default AnimatedText;
-
 
