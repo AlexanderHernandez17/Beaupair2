@@ -3,7 +3,6 @@ import Benefits from "@/components/beneficios";
 import ButtonComponent from "@/components/button";
 import CardComponent from "@/components/card";
 import CarruselComponent from "@/components/carrusel";
-import MySwiperComponent from "@/components/carrusel2";
 import FullScreenVideo from "@/components/mainVideo";
 import MapComponent from "@/components/map";
 import ModalComponent from "@/components/modal";
@@ -11,6 +10,7 @@ import { title } from "@/components/primitives";
 import { DynamicContent } from "@/components/services";
 import AnimatedText from "@/components/textAnimation";
 import WhatsAppButton from "@/components/whatsappButton";
+
 
 export default function Home() {
   const benefitsList = [
