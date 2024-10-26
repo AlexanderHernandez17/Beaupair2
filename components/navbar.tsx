@@ -76,7 +76,7 @@ export const Navbar = () => {
                 href="./team"
                 size="lg"
               >
-                {item.label}
+                {}
               </Link>
             </NavbarMenuItem>
           ))}
