@@ -3,6 +3,7 @@ import Benefits from "@/components/beneficios";
 import ButtonComponent from "@/components/button";
 import CardComponent from "@/components/card";
 import CarruselComponent from "@/components/carrusel";
+import CircleComponent from "@/components/esferas";
 import LogrosComponent from "@/components/logra";
 import FullScreenVideo from "@/components/mainVideo";
 import MapComponent from "@/components/map";
@@ -217,6 +218,13 @@ export default function Home() {
          <div className="mt-8">
          <ModalComponent />
          </div>
+         </div>
+
+         <div className="mt-24">
+          <h2 className="text-center font-semibold text-2xl">Nuestro equipo</h2>
+          <div className="mt-8">
+          <CircleComponent/>
+          </div>
          </div>
 
 

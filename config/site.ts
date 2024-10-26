@@ -14,10 +14,7 @@ export const siteConfig = {
     },
   ],
   navMenuItems: [
-    {
-      label: "Team",
-      href: "/team",
-    },
+
 
   ],
   links: {
