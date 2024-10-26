@@ -13,4 +13,10 @@
     padding: 0;
   }
 
-  
+  .section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1440px;
+  margin: auto;
+}
