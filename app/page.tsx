@@ -1,5 +1,4 @@
 "use client";
-import Benefits from "@/components/beneficios";
 import ButtonComponent from "@/components/button";
 import CardComponent from "@/components/card";
 import CarruselComponent from "@/components/carrusel";
@@ -15,36 +14,6 @@ import WhatsAppButton from "@/components/whatsappButton";
 
 
 export default function Home() {
-  const benefitsList = [
-    {
-      text: 'Un ingreso semanal mínimo de $195.75 USD.',
-      icon: '/dollar.png', 
-    },
-    {
-      text: 'Hospedaje y alimentación.',
-      icon: '/hospedaje.png', 
-    },
-    {
-      text: 'Dos semanas de vacaciones remuneradas al año.',
-      icon: '/vacaciones.png',
-    },
-    {
-      text: 'Bono educativo de $500 USD.',
-      icon: '/estudio.png', 
-    },
-    {
-      text: 'Tiempo libre para explorar Estados Unidos y hacer amigos de todo el mundo.',
-      icon: '/drink.png',
-    },
-    {
-      text: 'Seguro médico completo.',
-      icon: '/medico.png', 
-    },
-    {
-      text: 'Un tiquete aéreo de ida y regreso incluido.',
-      icon: '/plane.png', 
-    },
-  ];
 
   const usaRequirements = [
     "Tener entre 18 y 26 años de edad.",
@@ -185,11 +154,6 @@ export default function Home() {
          </div>
          </div>
 
-         <div className="flex flex-col space-y-4 mt-16">
-        {secondBenefitsList.map((benefit, index) => (
-          <Benefits key={index} text={benefit.text} icon={benefit.icon} />
-        ))}
-      </div>
 
       <div className=" mt-16">
       <AnimatedText text="Nuestros Servicios" className="text-[#BF5FFF]" />

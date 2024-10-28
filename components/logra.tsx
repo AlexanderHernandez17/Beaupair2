@@ -23,7 +23,7 @@ const items = [
   },
   {
     title: "Bono educativo de $500 USD",
-    imageUrl: "/study.png",
+    imageUrl: "/study.jpg",
   },
   {
     title: "Tiempo libre para explorar Estados Unidos y hacer amigos de todo el mundo",
@@ -55,6 +55,7 @@ const Carrusel: React.FC<CarruselProps> = ({ title, image }) => {
             layout="fill"
             objectFit="cover"
             className="rounded-xl"
+            loading="lazy"
           />
         </div>
         <div className="absolute inset-0 z-10 bg-black bg-opacity-40 flex flex-col justify-center items-center p-8 text-white rounded-xl">

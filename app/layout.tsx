@@ -46,25 +46,25 @@ export default function RootLayout({
             <main className="flex-grow pt-16 px-6">
               {children}
             </main>
-            <footer className="bg-gray-800 text-white py-4 flex justify-between items-center px-6">
-              {/* Espacio para el Logo */}
-              <div className="flex-shrink-0">
-                <img src="/logo completo.png" alt="Logo" className="h-32" />
-              </div>
-              {/* Información de Contacto */}
-              <div className="flex flex-col">
-                <h2 className="text-lg font-bold">Contáctanos:</h2>
-                <p>(+57) 304 419 2414</p>
-                <p>(+57) 322 418 5190</p>
-                <p>info@beaupair.co</p>
-              </div>
-              {/* Términos y Condiciones */}
-              <div className="flex-shrink-0">
-                <a href="/terminos-y-condiciones" className="text-sm text-gray-400 hover:text-white">
-                  Términos y Condiciones
-                </a>
-              </div>
-            </footer>
+            <footer className="bg-gray-800 text-white py-4 flex flex-wrap justify-between items-center px-6">
+  {/* Espacio para el Logo */}
+  <div className="flex-shrink-0 mb-4 md:mb-0">
+    <img src="/logo completo.png" alt="Logo" className="h-32" />
+  </div>
+  {/* Información de Contacto */}
+  <div className="flex flex-col mb-4 md:mb-0">
+    <h2 className="text-lg font-bold">Contáctanos:</h2>
+    <p>(+57) 304 419 2414</p>
+    <p>(+57) 322 418 5190</p>
+    <p>info@beaupair.co</p>
+  </div>
+  {/* Términos y Condiciones */}
+  <div className="flex-shrink-0">
+    <a href="/terminos-y-condiciones" className="text-sm text-gray-400 hover:text-white">
+      Términos y Condiciones
+    </a>
+  </div>
+</footer>
           </div>
         </Providers>
       </body>
