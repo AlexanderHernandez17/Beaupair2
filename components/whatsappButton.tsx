@@ -7,7 +7,7 @@ const WhatsAppButton: React.FC = () => {
       href="https://wa.me/"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-5 right-5 bg-green-500 rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow"
+      className="fixed z-50 bottom-5 right-5 bg-green-500 rounded-full p-3 shadow-lg hover:shadow-xl transition-shadow"
     >
       <img
         src="\WhatsApp.svg.webp" 

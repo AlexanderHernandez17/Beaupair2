@@ -144,8 +144,6 @@ export default function Home() {
          <PaysOpcions/>
         </div>
 
-         
-
 
       <div className=" mt-16">
       <AnimatedText text="Nuestros Servicios" className="text-[#BF5FFF]" />
