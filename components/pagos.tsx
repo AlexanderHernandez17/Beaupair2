@@ -37,7 +37,7 @@ const BenefitsList = () => {
           className="flex items-center"
         >
           <img src={item.icon} alt="icono" className="w-6 h-6 mr-4" />
-          <p className="text-gray-800 font-semibold text-2xl">{item.text}</p>
+          <p className="font-semibold text-2xl">{item.text}</p>
         </motion.div>
       ))}
     </div>

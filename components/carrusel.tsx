@@ -52,12 +52,12 @@ const Carrusel: React.FC<CarruselProps> = ({ title, description, image }) => {
       <Card className="relative h-96 w-80 mx-auto rounded-xl overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
+            priority={true}
             alt="Card background"
             src={image}
             layout="fill"
             objectFit="cover"
             className="rounded-xl"
-            loading="lazy"
           />
         </div>
         <div className="absolute inset-0 z-10 bg-black bg-opacity-40 flex flex-col justify-center items-center p-8 text-white rounded-xl">
