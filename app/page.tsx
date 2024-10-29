@@ -7,6 +7,7 @@ import LogrosComponent from "@/components/logra";
 import FullScreenVideo from "@/components/mainVideo";
 import MapComponent from "@/components/map";
 import ModalComponent from "@/components/modal";
+import PaysOpcions from "@/components/pagos";
 import { title } from "@/components/primitives";
 import { DynamicContent } from "@/components/services";
 import AnimatedText from "@/components/textAnimation";
@@ -41,21 +42,6 @@ export default function Home() {
     "Estudia lo que más te guste en Alemania.",
     "Viaja por toda Europa de manera muy económica.",
     "Bono educativo.",
-  ];
-
-  const secondBenefitsList = [
-    {
-      text: 'Único pago de valor $3.500.000',
-      icon: '/favorito.png', 
-    },
-    {
-      text: 'Matrícula: $600.000 - Pago restante $2.900.000',
-      icon: '/favorito.png', 
-    },
-    {
-      text: 'Pago Diferido por valor de $4.050.000',
-      icon: '/favorito.png',
-    },
   ];
 
 
@@ -154,14 +140,17 @@ export default function Home() {
          </div>
          </div>
 
+         <div className=" mt-16">
+         <PaysOpcions/>
+        </div>
+
+         
+
 
       <div className=" mt-16">
       <AnimatedText text="Nuestros Servicios" className="text-[#BF5FFF]" />
       </div>
 
-      <div className=" mt-16">
-
-      </div>
       
 
       <div className="mt-16">
